@@ -5,7 +5,7 @@ default.vueに書いたものが、指定しなくても各ページに適用さ
 個別にlayoutを指定する場合は、`layout: 'hoge'`のように名前を指定する      
 ex. `pages/vuex/classic.vue`    
 
-# PAGES
+# pages
 ルーティング。テンプレートの表示。      
 ファイル名がそのままurlになる。    
 _からのファイル名はルーティングパラメータの変数名として使える    
@@ -19,3 +19,15 @@ _からのファイル名はルーティングパラメータの変数名とし�
 - pages/vuex/module.vue
 - store/index.jsでそれぞれexportする
 - ファイル名を別にするとそれが名前空間となる
+
+
+# 静的ページ, SSR, PWA
+### 静的ページ
+`nuxt generate`コマンドで生成される。     
+ex. [GitHub Pagesへのデプロイ](https://ja.nuxtjs.org/faq/github-pages)
+
+### SSR
+特に設定せずに        
+ex. [Herokuへのデプロイ](https://ja.nuxtjs.org/faq/heroku-deployment)
+
+### PWA
