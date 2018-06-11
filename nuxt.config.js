@@ -35,6 +35,15 @@ module.exports = {
       }
     }
   },
+
+  modules: [
+    '@nuxtjs/pwa'
+  ],
+  manifest: {
+      name: 'PWA',
+      lang: 'ja'
+  },
+
   watchers: {
     webpack: {
       poll: true
