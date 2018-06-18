@@ -44,7 +44,8 @@ module.exports = {
   },
 
   css: [
-    'bulma'
+    {src: '~assets/main.scss', lang: 'scss'}
+    //'bulma'
   ],
 
   modules: [
