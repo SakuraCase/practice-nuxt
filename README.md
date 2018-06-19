@@ -60,25 +60,25 @@ ex. [Herokuへのデプロイ](https://ja.nuxtjs.org/faq/heroku-deployment)
    ```
 
 1. `nuxt.config.js` 追加
-```
-  // buildに以下を追加
-  // bulma入れたときに出るwarningが出なくなる
-  build: {
+  ```
+    // buildに以下を追加
+    // bulma入れたときに出るwarningが出なくなる
+    build: {
 
-    postcss: {
-      plugins: {
-        'postcss-custom-properties': {
-          warnings: false
+      postcss: {
+        plugins: {
+          'postcss-custom-properties': {
+            warnings: false
+          }
         }
       }
-    }
-  },
-  
-  // cssにbulma追加
-  css: [
-    'bulma'
-  ],
-```
+    },
+
+    // cssにbulma追加
+    css: [
+      'bulma'
+    ],
+  ```
 
 ### 参考
 - [Nuxt.jsにBulmaを導入して変数を使ったカスタマイズを行う](https://qiita.com/mnmemo/items/5eb4fb8cbfe17670fd36)
@@ -86,3 +86,9 @@ ex. [Herokuへのデプロイ](https://ja.nuxtjs.org/faq/heroku-deployment)
 - [Nuxt.js で CSS フレームワークを 3 つ試した。](https://qiita.com/high-u/items/b8c708cd3795d2ab4a13#bulma-scss%E7%B7%A8)
 - [Nuxt.jsにBulmaを組み込んだら、Vuexストアが理解できた件](https://qiita.com/isamusuzuki/items/5ec800e423a3a56ef03d)
 - [scss公式](https://sass-lang.com/guide)
+
+# [テスト](https://ja.nuxtjs.org/guide/development-tools)
+1. `yarn add ava jsdom --dev`
+1. テストコード追加
+1. `yarn test`
+
