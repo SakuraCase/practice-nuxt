@@ -89,6 +89,6 @@ ex. [Herokuへのデプロイ](https://ja.nuxtjs.org/faq/heroku-deployment)
 
 # [テスト](https://ja.nuxtjs.org/guide/development-tools)
 1. `yarn add ava jsdom --dev`
+1. `nuxt.config.js` 追加
 1. テストコード追加
 1. `yarn test`
-
